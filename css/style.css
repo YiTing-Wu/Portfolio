@@ -32,7 +32,7 @@ body {
 
  .title-left {
   color: rgb(228, 174, 11);
-  font-size: 3vw;
+  font-size: 2.5rem;
   
  }
 
@@ -49,7 +49,7 @@ body {
 } */
 .skill__wrap {
   /* border-top: 1px solid #fff; */
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 .about-mf .about-img {
   display: inline-block;
@@ -112,7 +112,7 @@ body {
   list-style: none;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .skill__list li {
@@ -143,7 +143,7 @@ body {
   }
 }
 
-.skill__list li img {
+.skill__list img {
   min-width: 50px;
   max-width: 50px;
 }
@@ -160,9 +160,9 @@ body {
 
 #portfolio {
   position: relative;
-  margin: 8rem 0;
+  margin: 3rem 0;
   background-color: #374752;
-  padding: 5rem;
+  padding: 4rem;
 }
 
 /* #portfolio > .container::before {
@@ -367,13 +367,13 @@ body {
     transform: translateY(100%);
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
   .projects__wrap .playbutton {
     border: 1px solid #fff;
-    padding: .9rem;
+    padding: 0.9rem 1rem;
     border-radius: 50%;
   }
   .projects__wrap .item_wrap:hover .item-text {
@@ -401,13 +401,17 @@ body {
 
   .projects__wrap .item_wrap .item-text ul li {
     padding: .15rem 0;
+    /* font-size: 1.3rem; */
+  }
+
+  .projects__wrap .item_wrap .item-text .fw-bold{
     font-size: 1.3rem;
   }
 
   .sub__text {
     /* border: 1px solid red; */
     color: rgba(255, 255, 255, .85);
-    /* font-size: .95rem; */
+    font-size: .95rem;
   }
 
   .projects__wrap .item_wrap .item-text span{
@@ -466,7 +470,7 @@ body {
     left: -9px;
     top: 0;
     background: #374752;
-    border: 2px solid rgb(228, 174, 11);
+    /* border: 2px solid rgb(228, 174, 11); */
   }
 
   .cv__wrap .line__wrap h4 {
@@ -615,4 +619,31 @@ body {
 
 .left-radius {
   border-radius: 0 30px 30px 0;
+}
+
+.cv__wrap .cv_tab {
+  border-radius: 30px;
+}
+
+.cv_tabs{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.cv_tabs li {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  background-color: #fff;
+  color: #212529;
+  padding: .4rem 1rem;
+  min-width: 100px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cv_tabs li:hover {
+  color: rgba(228, 174, 11, 0.5);
 }
