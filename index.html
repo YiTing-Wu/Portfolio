@@ -2,34 +2,604 @@
 <html lang="zh">
 
 <head>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YiTingWu</title>
+
+    <!-- CSS FILES -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/aos.css" rel="stylesheet">
+
+    <link href="css/templatemo-nomad-force.css" rel="stylesheet">
+
 </head>
 
+
 <body>
-    <div class="index__wrap white__wrap">
-    <!-- Nav Bar -->
-    <!-- <div class="hamburger" onclick="toggleMenu()">☰</div> -->
-    <nav class="nav__wrap" id="navbar">
-        <a href="./aboutme.html">關於我</a>
-        <a href="./profilo.html">作品集</a>
-        <a href="./index.html">首頁</a>
-        <a href="./projects.html">參與專案</a>
-        <a href="./cv.html">CV</a>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="homeText">
+            <h1 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
+                Yi Ting Wu
+            </h1>
+
+            <p class="text-secondary-white-color" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                A Developer and On-Set Technical Artist.
+            </p>
+        </div>
+    </section>
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark gradient shadow-lg" data-aos="fade-up"
+        data-aos-offset="0" data-aos-duration="1000" data-aos-delay="2000">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">首頁</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">關於我</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">作品集</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">參與專案</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cv">簡歷</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-        <!-- Title -->
-        <section class="title">
-            <h1>YITING, WU</h1>
-            <h2>A Developer and On-Site Technical Artist.</h2>
-        </section>
-        <!-- Email -->
-        <section class="email__wrap">
-            <img src="./img/email.png" alt="">
-        </section>
+
+    <div class="bg-dark text-white">
+        <div class="pt-3">
+            <!-- About -->
+            <section id="about" class="about-mf route">
+                <div class="container">
+                    <div class="box-shadow-full ">
+                        <div class="row pb-5">
+                            <div class="col-12">
+                                <h3 class="title-left text-center">
+                                    About me
+                                </h3>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="about-img">
+                                    <img src="./img/AboutMe/me_square.png.jpg" class="img-fluid rounded b-shadow-a"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="about-me pt-4 pt-md-2">
+                                    <p class="lead">
+                                        目前在夢想動畫虛實部擔任技術組組長一職，除了在拍攝現場解決軟硬體突發狀況外，也負責整體工作流程的優化和技術研發。
+                                    </p>
+                                    <p class="lead">
+                                        過去燈光合成師的經驗，讓我大大提升美感及專業能力，也了解後期製作的工作流程。後來擔任Python工程師到現在的Technical
+                                        Artist，工作之餘也會接洽影像後製相關的案子，讓我的生活跨足在影像創作跟程式編譯中。
+                                    </p>
+                                    <p class="lead">
+                                        我喜歡圖像化有美感的事物，也喜歡完成程式後獲得的成就感。在學期間經過課程的邏輯訓練，使我在進入職場後能夠有效的解決各種問題並且快速吸收新知，更快進入狀況，過去的經歷更讓現在的我能夠成為美術跟工程技術端溝通的橋梁。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 skill__wrap">
+                            <h3 class="title-left text-center pt-5">
+                                Skill
+                            </h3>
+                            <ul class="skill__list d-flex p-0">
+                                <li class="d-flex">
+                                    <span><img src="./img/AboutMe/Skill/VirtualProduction.png" alt=""></span>
+                                    <h5 class="m-0 text-white fw-bold">Unreal、TouchDesigner、Maya</h5>
+                                </li>
+                                <li class="d-flex">
+                                    <span><img src="./img/AboutMe/Skill/Coding.png" alt=""></span>
+                                    <h5 class="m-0 text-white fw-bold">Python、Html、CSS、JavaScript、PostgreSQL</h5>
+                                </li>
+                                <li class="d-flex">
+                                    <span><img src="./img/AboutMe/Skill/Effects.png" alt=""></span>
+                                    <h5 class="m-0 text-white fw-bold">Nuke、Fusion Studio、After Effects</h5>
+                                </li>
+                                <li class="d-flex">
+                                    <span><img src="./img/AboutMe/Skill/Draw.png" alt=""></span>
+                                    <h5 class="m-0 text-white fw-bold">Illustrator、Photoshop</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Skill -->
+                    
+            </section>
+
+            <!-- Portfolio -->
+            <section id="portfolio" class="blog-mf route">
+                <div class="container">
+                    <h3 class="title-left text-center">
+                        Portfolio
+                    </h3>
+                    <ul class="tabs" data-tab-group="1">
+                        <li class="tab right-radius tabactive">All</li>
+                        <li class="tab">Tech</li>
+                        <li class="tab left-radius">Art</li>
+                    </ul>
+                    <div class="row portfolio_card custom_card">
+                        <div class="category col-md-4" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog"
+                                data-videourl="https://player.vimeo.com/video/918791233?h=895db3f942">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/FolderCreator.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>專案資料夾管理工具</span>
+                                    <p>透過ShotGrid
+                                        API讀取所有的專案，使用者選取要製作的專案會自動產生對應的檔案及資料夾，也可以產生自定義的資料夾，其附有規範的子資料夾，方便美術人員檔案管理。</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog"
+                                data-videourl="https://player.vimeo.com/video/920115772?h=8fbb26aecf">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/nDisplaySettingTool.png.jpg" alt=""
+                                        class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>nDisplay設定工具</span>
+                                    <p>藉由Unreal介面迅速設定好nDisplay跟Switchboard的設定，提高現場TA的工作效率。</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog"
+                                data-videourl="https://player.vimeo.com/video/918667405?h=682a2a1cb6">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/MediaPipe.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>MediaPipe動補工具</span>
+                                    <p>利用MediaPipe即時抓取使用者動態轉換到Unreal骨架，使用者可以將物件吸附在指定的骨架上，方便Virtual
+                                        Production的表演者可以有互動的表現</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog"
+                                data-videourl="https://player.vimeo.com/video/918868587?h=5f4a351e3f">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/VirtualHuman.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>WIP | 虛擬人對話</span>
+                                    <p>使用Speech To Text(STT)將聲音轉成文字後經由ChatGPT API得到回應，再經由Text To
+                                        Speech(TTS)存成音檔，透過MetaHuman
+                                        SDK將音檔轉成動畫。</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog"
+                                data-videourl="https://player.vimeo.com/video/919676004?h=fd0ed289dd">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/UnrealEffects.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>Unreal Effects</span>
+                                    <p>Blueprint和Niagara製作出場景需要的效果。</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog"
+                                data-videourl="https://player.vimeo.com/video/919738575?h=c0f18dc421">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/SwitchTool.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>切換影片素材工具</span>
+                                    <p>將Switch Operator接上工具後，會自動產生相對應的按鈕方便切換，並且將所選的素材資訊套用到Timeline設定上，方便使用者操作。</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category " data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog"
+                                data-videourl="https://player.vimeo.com/video/919738636?h=c8390cc60f">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/GreenScreenTool.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>綠幕投播工具</span>
+                                    <p>製作一個介面讓使用者可以選擇不同的Marker樣式，也能各別調整Marker和背景顏色，透過介面可以更直覺的調整。</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog"
+                                data-videourl="https://player.vimeo.com/video/919738536?h=b53e43e413">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/OSCPlayer.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>OSC Player</span>
+                                    <p>利用TD製作了一個播放器介面，可以選擇要播放的模式也能自訂範圍，透過OSC來控制Unreal中的Sequence。</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,art" data-tab-group="1">
+                            <div class="card card-blog"
+                                data-videourl="https://player.vimeo.com/video/546785255?h=002c20d544">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Art/Showreel.png" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>2020 Showreel</span>
+                                    <p>2017-2020年參與過的作品</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog" data-videourl="">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/HouseWeb.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>雙北房價預測網站</span>
+                                    <p>參與資策會巨量資料分析班，利用爬蟲蒐集不動產的相關資料和其他輔助資料，
+                                        加上機器學習的建模分析達到預測價格的結果，Demo內容為我負責撰寫的網頁呈現結果</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog" data-videourl="">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/WebScrapy.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>爬蟲Demo</span>
+                                    <p>使用Python跟Selenium爬取動態網頁取得資料</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-4 category" data-category="all,tech" data-tab-group="1">
+                            <div class="card card-blog" data-videourl="">
+                                <div class="card-img">
+                                    <img src="./img/Portfolio/Tech/LeapMotion.jpg" alt="" class="img-fluid">
+                                </div>
+                                <section class="card-text">
+                                    <span>接水果</span>
+                                    <p>利用Leap Motion得到使用者手部的移動，進而控制遊戲中水果籃的位置接水果</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects">
+                <h3 class="title-left text-center">
+                    Projects
+                </h3>
+                <ul class="tabs" data-tab-group="2">
+                    <li class="tab right-radius tabactive">All</li>
+                    <li class="tab">VirtualProduction</li>
+                    <li class="tab">Mocap</li>
+                    <li class="tab left-radius">LightComp</li>
+                </ul>
+                <div class="projects__wrap custom_card">
+                    <!-- 潘朵拉 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,VirtualProduction" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/VirtualProduction/Pandora.jpg" alt="">
+                            <section class="item-text card-blog"
+                                data-videourl="https://www.youtube.com/embed/G4lWyoBqEAc?si=ktRR-JURS30AeeBA">
+                                <ul>
+                                    <li class="fw-bold">專案 | 潘朵拉：命運先知</li>
+                                    <li class="sub__text">角色: 現場技術美術</li>
+                                </ul>
+                                <div class="playbutton">
+                                    <div class="box"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 麥當勞 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,VirtualProduction" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/VirtualProduction/McDonald.jpg" alt="">
+                            <section class="item-text card-blog"
+                                data-videourl="https://www.youtube.com/embed/IY9zqc0yD7Q?si=zFyfOIL6KzEmabN0">
+                                <ul>
+                                    <li class="fw-bold">專案 | 麥當勞</li>
+                                    <li class="sub__text">角色: 現場技術美術</li>
+                                </ul>
+                                <div class="playbutton">
+                                    <div class="box"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 英雄聯盟 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,VirtualProduction" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/VirtualProduction/Hero.jpg" alt="">
+                            <section class="item-text card-blog"
+                                data-videourl="https://www.youtube.com/embed/ypcpLRLxGFs?si=L-80nw0kBel7W5zA">
+                                <ul>
+                                    <li class="fw-bold">專案 | 英雄聯盟嘉年華</li>
+                                    <li class="sub__text">角色: 現場技術美術</li>
+                                </ul>
+                                <div class="playbutton">
+                                    <div class="box"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 天龍八部 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,VirtualProduction" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/VirtualProduction/Demi-Gods and Semi-Devils.jpg" alt="">
+                            <section class="item-text card-blog"
+                                data-videourl="https://player.vimeo.com/video/735354738?h=eb8ec3dcff">
+                                <ul>
+                                    <li class="fw-bold">專案 | 天龍八部</li>
+                                    <li class="sub__text">角色: 現場技術美術</li>
+                                </ul>
+                                <div class="playbutton">
+                                    <div class="box"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 五堅情 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,VirtualProduction" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/VirtualProduction/MoonLanding.jpg" alt="">
+                            <section class="item-text card-blog"
+                                data-videourl="https://www.youtube.com/embed/AYxmrcY4b3U?si=qF2xgd33cr7tzLKf">
+                                <ul>
+                                    <li class="fw-bold">專案 | Moon Landing Experience</li>
+                                    <li class="sub__text">角色: 現場技術美術</li>
+                                </ul>
+                                <div class="playbutton">
+                                    <div class="box"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- Acer 發表會 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,VirtualProduction" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/VirtualProduction/Acer.jpg" alt="">
+                            <section class="item-text card-blog"
+                                data-videourl="https://player.vimeo.com/video/661118251?h=bd0b17ce12">
+                                <ul>
+                                    <li class="fw-bold">專案 | Acer HOLGPC 發表會</li>
+                                    <li class="sub__text">角色: 現場技術美術</li>
+                                </ul>
+                                <div class="playbutton">
+                                    <div class="box"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 懶懶可可 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,Mocap" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/Mocap/LAN & KOKO.jpg" alt="">
+                            <section class="item-text card-blog"
+                                data-videourl="https://www.youtube.com/embed/pi5v6U7mWXQ?si=DIDFIWCxWLqxy-zC">
+                                <ul>
+                                    <li class="fw-bold">專案 | 懶懶與可可</li>
+                                    <li class="sub__text">角色: 現場技術美術</li>
+                                </ul>
+                                <div class="playbutton">
+                                    <div class="box"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- ASUS Voice of the Rebels -->
+                    <div class="item_wrap col-md-4 category" data-category="all,Mocap" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/Mocap/Voice of the Rebels.jpg" alt="">
+                            <section class="item-text card-blog"
+                                data-videourl="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FMoonShineAnimation%2Fvideos%2F327730509731247%2F&show_text=false&width=560&t=0">
+                                <ul>
+                                    <li class="fw-bold">專案 | ASUS Voice of the Rebels</li>
+                                    <li class="sub__text">角色: 現場技術美術</li>
+                                </ul>
+                                <div class="playbutton">
+                                    <div class="box"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 實習作品 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,VirtualProduction" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/VirtualProduction/Intern.jpg" alt="">
+                            <section class="item-text card-blog"
+                                data-videourl="https://player.vimeo.com/video/615589822?h=c914aaa056">
+                                <ul>
+                                    <li class="fw-bold">專案 | C137-Yarma</li>
+                                    <li class="sub__text">角色: 現場技術美術 | 剪輯合成師</li>
+                                </ul>
+                                <div class="playbutton">
+                                    <div class="box"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 奔奔小飛車 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,LightComp" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/LightComp/Egg Car 奔奔小飛車 (2019).jpg" alt="">
+                            <section class="item-text ">
+                                <ul>
+                                    <li class="fw-bold">專案 | 奔奔小飛車</li>
+                                    <li class="sub__text">角色: 燈光合成師</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 蒼天之拳 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,LightComp" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/LightComp/First of the Blue Sky 蒼天之拳 (2018).jpg" alt="">
+                            <section class="item-text ">
+                                <ul>
+                                    <li class="fw-bold">專案 | 蒼天之拳</li>
+                                    <li class="sub__text">角色: 燈光合成師</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 回到明朝 -->
+                    <div class="item_wrap col-md-4 category" data-category="all,LightComp" data-tab-group="2">
+                        <div class="aspect-ratio-box">
+                            <img src="./img/Projects/LightComp/Royal Highness 回到明朝當王爺之楊凌傳 (2018).jpg" alt="">
+                            <section class="item-text ">
+                                <ul>
+                                    <li class="fw-bold">專案 | 回到明朝當王爺之楊凌傳</li>
+                                    <li class="sub__text">角色: 燈光合成師</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CV -->
+            <section id="cv">
+                <div class="container">
+                    <div class="cv__wrap row m-0 p-0">
+                        <h3 class="title-left text-center">
+                            Experience
+                        </h3>
+                        <div class="col-md-6">
+                            <section class="resume-section">
+                                <h4>工作經歷</h4>
+                                <article class="job-experience">
+                                    <section class="line__wrap">
+                                        <h4>Unreal Technical Artist</h4>
+                                        <span class="timeline">2021.10 - 現在</span>
+                                        <div class="company"><i>夢想動畫股份有限公司 – 台北市內湖區/新北市汐止區</i></div>
+                                        <ul>
+                                            <li>拍攝現場技術執行、處理軟硬體突發狀況和訊號串接問題</li>
+                                            <li>使用Python和Blueprint開發Unreal自動化工具協助同仁減少重複性工作</li>
+                                            <li>使用Python開發TouchDesigner操控介面以利現場拍攝執行</li>
+                                            <li>優化同仁工作流程和技術分享</li>
+                                            <li>培訓新進人員</li>
+                                        </ul>
+                                    </section>
+                                    <section class="line__wrap">
+                                        <h4>Python 數據工程師</h4>
+                                        <span class="timeline">2020.11 – 2021.05</span>
+                                        <div class="company"><i>卡庫股份有限公司 – 台北市大安區</i></div>
+                                        <ul>
+                                            <li>優化及維護網頁爬蟲功能，解決爬蟲問題並將數據錯誤率降低至1%</li>
+                                            <li>使用Flask建立數據後台網頁，方便使用者查看數據結果</li>
+                                            <li>操作Linux系統和資料庫(PostgreSQL)修正數據</li>
+                                            <li>統整數據報表</li>
+                                        </ul>
+                                    </section>
+                                    <section class="line__wrap">
+                                        <h4>燈光合成師</h4>
+                                        <span class="timeline">2017.02 – 2020.03</span>
+                                        <div class="company"><i>砌禾數位動畫股份有限公司 – 新北市中和區</i></div>
+                                        <ul>
+                                            <li>建立Nuke Gizmo處理特殊需求、撰寫工具幫助部門提升工作效率</li>
+                                            <li>專案工作分配、跨部門合作、達到上級和客戶需求</li>
+                                            <li>使用Nuke 進行CG或實景合成作業</li>
+                                            <li>根據不同氛圍的場景調整Maya燈光並分層算圖</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </section>
+                        </div>
+                        <div class="col-md-6">
+                            <section class="resume-section">
+                                <h4>進修課程</h1>
+                                    <article class="job-experience">
+                                        <section class="line__wrap">
+                                            <h4>數據資料分析</h4>
+                                            <span class="timeline">2020.04 – 2020.0</span>
+                                            <div class="company"><i>資策會</i></div>
+                                            <ul>
+                                                <li>Python、Java</li>
+                                                <li>網頁前端技術(Html、CSS、JavaScript)</li>
+                                                <li>操作Linux Ubuntu系統和關聯式、非關聯式資料庫</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                            </section>
+                            <section class="resume-section">
+                                <h4>學歷</h1>
+                                    <article class="job-experience">
+                                        <section class="line__wrap">
+                                            <h4>銘傳大學 – 桃園</h4>
+                                            <span class="timeline">2012.09 – 2016.06</span>
+                                            <div class="company"><i>資訊傳播工程學系（畢業）</i></div>
+                                        </section>
+                                    </article>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Email -->
+            <section class="email__wrap" data-aos="zoom-in">
+                <a href="mailto:yiting2520@gmail.com">
+                    <img src="./img/email.png" alt="">
+                </a>
+            </section>
+        </div>
     </div>
-    <script src="./js/index.js"></script>
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script> -->
+
+
+    <!-- JAVASCRIPT FILES -->
+    <!-- <script src="./js/index.js"></script> -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
